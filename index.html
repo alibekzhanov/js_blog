@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини Блог</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Авторизация -->
+    <div id="auth-container" class="container">
+        <h2>Welcome!</h2>
+        <p>Enter your login name</p>
+        <input type="text" id="username" placeholder="Your Name" />
+        <button id="login-btn">Enter</button>
+    </div>
+
+    <!-- Основной контент -->
+    <div id="blog-container" class="container hidden">
+        <h1>My Mini Blog</h1>
+        <h3 id="welcome-message"></h3>
+
+        <!-- Форма для создания постов -->
+        <div class="post-creator">
+        <textarea id="post-content" placeholder="What's new?"></textarea>
+        <button id="post-btn">Add post</button>
+        </div>
+
+        <!-- Лента постов -->
+        <div id="posts" class="posts"></div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
